@@ -1,7 +1,7 @@
 <header class="header">
     <button class="menu-btn" *ngIf="isLoggedIn" (click)="toggle()">☰</button>
     <h4>
-        <a routerLink="/welcome" class="bms-link">Intranet</a>
+        <a routerLink="/welcome" class="bms-link">FMS</a>
     </h4>
     <div *ngIf="isLoggedIn">
         {{ username }}
