@@ -1,0 +1,50 @@
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 6%;
+}
+
+.logi-card {
+  background-color: #fff;
+  padding: 35px;
+  width: 320px;
+  border-radius: 8px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+  text-align: center;
+}
+.login-card h2 {
+  margin-bottom: 20px;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+input{
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+
+}
+
+button {
+  width: 100%;
+  padding: 10px;
+  background: #0e9c72;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #0b7a5c;
+}
+
+.hint {
+  margin-top: 15px;
+  font-size: 14px;
+  color: #666;
+}
