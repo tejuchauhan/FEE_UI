@@ -4,8 +4,8 @@
     padding: 1px;
     box-shadow: 0 5px 5px #00000026;
     height: 42px;
-  display: flex;
-    justify-content: space-between;
-    align-items: center;
-    position: relative;
+  /* display: flex; */
+  justify-content: space-between;
+  align-items: center;
+  /* position: relative; */
 }

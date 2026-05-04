@@ -13,31 +13,29 @@
   z-index: 1000;
 }
 
-.menu-btn {
-  font-size: 22px;
-  margin-right: 20px;
-  cursor: pointer;
+.menu-btn{
+  font-size:22px;
+  margin-right:20px;
+  cursor:pointer;
   background:none;
-  border: none;
-  color: white;
-
+  border:none;
+  color:white;
 }
 
 .logout-btn {
-  
   background: white;
   border: none;
   padding: 6px 12px;
-  cursor: pointer;  
+  cursor: pointer;
 }
 
 .logout-icon {
   cursor: pointer;
-  font-size: 18px;
+  font-size: 28px;
 }
 
 .bms-link {
   text-decoration: none;
-  color:inherit;
+  color: inherit;
   cursor: pointer;
 }

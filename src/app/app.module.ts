@@ -11,6 +11,8 @@ import { AppRoutingModule } from './app.routes';
 import { LoginComponent } from './modules/auth/login/login.component';
 import { CommonModule } from '@angular/common';
 import { WelcomeComponent } from './modules/welcome/welcome.component';
+import { AddStudentComponent } from './modules/Students/pages/add-student/add-student.component';
+import { AllStudentComponent } from './modules/Students/pages/all-student/all-student.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +21,9 @@ import { WelcomeComponent } from './modules/welcome/welcome.component';
     HeaderComponent,
     SidebarComponent,
     LoginComponent,
-    WelcomeComponent // declare your root component
+    WelcomeComponent,
+    AllStudentComponent,
+    AddStudentComponent // declare your root component
   ],
   imports: [
     BrowserModule,

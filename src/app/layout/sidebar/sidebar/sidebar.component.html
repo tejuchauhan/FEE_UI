@@ -1,1 +1,36 @@
-<p>sidebar works!</p>
+<div class="sidebar" [class.collapsed]="collapsed">
+  <ul>
+
+    <!-- Home -->
+    <li *ngIf="hasAnyRole([0,1,2,3,4])">
+      <a 
+        routerLink="/welcome" 
+        routerLinkActive="active" 
+        [routerLinkActiveOptions]="{ exact: true }">
+        
+        <span class="icon">🏠</span>
+        <span class="text" *ngIf="!collapsed">Home(Welcome)</span>
+      </a>
+    </li>
+
+    <!-- Students -->
+    <li *ngIf="hasAnyRole([0,1,2,3,4])">
+      <a href="javascript:void(0)" (click)="toggleStudentsMenu()">
+        <span class="icon">👨‍🎓</span>
+        <span class="text" *ngIf="!collapsed">Students</span>
+        <span class="arrow" [class.rotate]="studentsOpen" *ngIf="!collapsed">▼</span>
+      </a>
+
+      <ul class="submenu" *ngIf="studentsOpen">
+        <li>
+          <a routerLink="/students/all" routerLinkActive="active">All Students</a>
+        </li>
+
+        <li *ngIf="hasAnyRole([0,1,2,3,4])">
+          <a routerLink="/students/add" routerLinkActive="active">Add Student</a>
+        </li>
+      </ul>
+    </li>
+
+  </ul>
+</div>
