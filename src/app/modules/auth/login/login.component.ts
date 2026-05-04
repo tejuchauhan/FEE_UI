@@ -14,6 +14,9 @@ export class LoginComponent {
   
   constructor(private authService: AuthService, private router: Router) {}
 
+  ngOnInit() {
+    this.authService.logout();
+  }
   login() {
     const loginRequest: LoginRequestDto = {
       userName: this.username,

@@ -59,7 +59,7 @@ export class AuthService {
   getUsername(){
     const username = localStorage.getItem('username');
     if(username){
-      return username.charAt(0).toUpperCase() + username.slice(1);
+      return 'Admin'; //username.charAt(0).toUpperCase() + username.slice(1);
     }
     return null;
   }

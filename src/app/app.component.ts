@@ -13,7 +13,9 @@ export class AppComponent {
     return this.authService.isLoggedIn();
   } 
   collapsed = false;
+
 toggleSidebar() {
   this.collapsed = !this.collapsed;
 } 
+
 }
